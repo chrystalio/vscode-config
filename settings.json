@@ -16,9 +16,6 @@
     "editor.minimap.enabled": false,
     "editor.lineNumbers": "off",
     "editor.guides.indentation": false,
-
-    // Silence the Noise
-    "breadcrumbs.enabled": false,
     "scm.diffDecorations": "none",
     "editor.hover.delay": 1500,
     "editor.hover.enabled": true,
@@ -120,7 +117,6 @@
         "editor.formatOnSave": true
     },
     "editor.wordWrapColumn": 120,
-    "files.autoSave": "afterDelay",
     "[css]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true
@@ -142,7 +138,7 @@
     "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'calt', 'dlig'",
     "diffEditor.wordWrap": "on",
     "notebook.output.wordWrap": true,
-    "editor.fontSize": 16,
+    "editor.fontSize": 14,
     "editor.minimap.maxColumn": 250,
     "codesnap.containerPadding": "8em",
     "codesnap.boxShadow": "rgba(0, 0, 0, 0.55) 0px 12px 24px",
@@ -158,7 +154,6 @@
     },
     "tailwindCSS.experimental.configFile": null,
     "editor.fontWeight": "400",
-    "workbench.activityBar.location": "hidden",
     "workbench.statusBar.visible": false,
     "editor.inlineSuggest.suppressSuggestions": true,
     "codesnap.backgroundColor": "#FFC540",
@@ -192,12 +187,34 @@
     },
     "material-icon-theme.saturation": 0,
     "vscode_custom_css.imports": [
-        "file:///Users/glennraya/custom-vscode.css",
-        "file:///Users/glennraya/vscode-script.js"
+        "file:///home/dev/vscode-config/custom-vscode.css",
+        "file:///home/dev/vscode-config/vscode-script.js"
     ],
-    "workbench.colorTheme": "React Theme",
+    "workbench.colorTheme": "Ayu Dark Bordered",
     "workbench.iconTheme": "eq-material-theme-icons-light",
     "workbench.sideBar.location": "right",
     "material-icon-theme.files.color": "#42a5f5",
-    "workbench.tree.enableStickyScroll": false
+    "workbench.tree.enableStickyScroll": false,
+    "remote.SSH.remotePlatform": {
+        "*.gitpod.io": "linux"
+    },
+    "github.copilot.editor.enableAutoCompletions": true,
+    "files.autoSave": "onFocusChange",
+    "git.autofetch": true,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": true,
+        "scminput": false
+    },
+    "remote.SSH.defaultExtensions": [
+        "gitpod.gitpod-remote-ssh"
+    ],
+    "workbench.activityBar.location": "hidden",
+    "vs-kubernetes": {
+        "vscode-kubernetes.helm-path-linux": "/home/dev/.local/state/vs-kubernetes/tools/helm/linux-amd64/helm",
+        "vscode-kubernetes.kubectl-path-linux": "/home/dev/.local/state/vs-kubernetes/tools/kubectl/kubectl",
+        "vscode-kubernetes.minikube-path-linux": "/home/dev/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube"
+    },
+    "breadcrumbs.enabled": false
 }
